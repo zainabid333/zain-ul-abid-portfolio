@@ -25,10 +25,23 @@ body {
 }
 
 .logo {
+  position: relative;
   font-size: 20px;
   color: #ededed;
   text-decoration: none;
   font-weight: 700;
+}
+
+.logo::before {
+  content: '';
+  position:absolute;
+  top: 0;
+  right: 0;
+  background-color: #081b29;
+  width: 100%;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: .4s;
 }
 
 .navbar a {
@@ -166,4 +179,9 @@ body {
 
 .home-sci a:hover::before {
   width: 100%;
+}
+@keyframes showRight{
+  100%{
+    width: 0;
+  }
 }
