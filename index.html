@@ -2,48 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zain Ul Abid Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Personal Portfolio Website Design | Codehal</title>
 
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
+    <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">Zain Ul Abid.</a>
+        <a href="" class="logo">Zain <span>Ul Abid.</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
-            <a href="" class="active">Home</a>
-            <a href="">About Me</a>
-            <a href="">Portfolio</a>
-            <a href="">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+
         </nav>
     </header>
-    <section class="home">
+    <!-- home section design -->
+    <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, I am Zain ul Abid</h1>
-            <h3>Full-Stack Developer</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi voluptatum asperiores doloribus ab
-                incidunt perferendis aut nulla rerum repellendus dolorum suscipit velit nobis nemo enim fugit ipsam,
-                odit, aliquid magnam?
-                Maxime dicta totam laboriosam illo, amet est aliquam accusamus similique error consectetur nesciunt
-                ullam, minus nisi quas magnam illum suscipit labore et ipsa optio quasi molestiae. Hic cumque sit vel.
-                Modi dolor vel, doloremque ex eos, beatae ipsam unde pariatur labore rerum temporibus libero quisquam
-                officia! Enim, qui unde rerum ut nulla, ipsum hic dolore iste vero illo aspernatur aliquam.
-            </p>
-            <div class="btn-box">
-                <a href="#">Hire me!</a>
-                <a href="#">Let's Talk!</a>
+            <h3>
+                Hello,It's me
+            </h3>
+            <h1>Zain Ul Abid</h1>
+            <h3>and I am a <span>Full-Stack developer</span></h3>
+            <p>I a passionate Full Stack Developer with extensive experience in building robust,
+                scalable, and efficient web applications. With a strong foundation in both front-end and back-end
+                technologies,
+                I thrive on transforming complex problems into elegant, user-friendly solutions.</p>
+            <div class="social-media">
+                <a href="#linkedin"><i class='bx bxl-linkedin'></i></a>
+                <a href="#Github"><i class='bx bxl-github'></i></a>
+                <a href="#twitter"><i class='bx bxl-linkedin'></i></a>
+                <a href="#stack"><i class='bx bxl-stack-overflow'></i></a>
             </div>
+            <a href="#" class="btn">Download CV</a>
         </div>
-        <div class="home-sci">
-            <a href=""><i class='bx bxl-linkedin'></i></a>
-            <a href=""><i class='bx bxs-envelope'></i></a>
-            <a href=""><i class='bx bxl-github'></i></a>
-            <a href=""><i class='bx bx-phone'></i></a>
+        <div class="home-img">
+            <img src="./assets/images/home.png" alt="">
         </div>
     </section>
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./assets/images/home.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">
+                About <span>Me</span>
+            </h2>
+            <h3>Full Stack Developer!</h3>
+            <p>Over the years, I have had the opportunity to work on a variety of projects ranging from small startups
+                to
+                large-scale enterprise applications. My experience has equipped me with a keen understanding of project
+                lifecycle management, agile methodologies, and cross-functional team collaboration.</p>
+            <a href="#" class="btn">Read More*</a>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio " id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./assets/images/portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Web designed for staffing agency for recruitment and agency</p>
+                    <a href="https://www.idealstaffingservices.ca"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/images/portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Mobi</h4>
+                    <p>Mobi App for mobile payment transfers and managing</p>
+                    <a href="https://www.idealstaffingservices.ca"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/images/portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Shopify</h4>
+                    <p>Shopify stores for users to manage online stores and sales</p>
+                    <a href="https://www.idealstaffingservices.ca"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/images/portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Dispatch</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, impedit!</p>
+                    <a href="https://www.idealstaffingservices.ca"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/images/portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>ERP Software</h4>
+                    <p>ERP software sales management for shops and business to manage sales</p>
+                    <a href="https://www.idealstaffingservices.ca"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/images/portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>HRIS Software</h4>
+                    <p>HRIS is designed for HR Managers to manage the HR responibilities</p>
+                    <a href="https://www.idealstaffingservices.ca"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Me" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Zain | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
