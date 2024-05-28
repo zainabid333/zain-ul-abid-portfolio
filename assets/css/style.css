@@ -11,12 +11,16 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+
+/* making universal declarations to use through out CSS */
 :root{
-    --bg-color: #0D1321;
-    --secon-bg-color: #1D2D44;
-    --text-color: #FFEAEC;
-    --main-color: #D64933;    
+    --bg-color: #dddbf1;
+    --secon-bg-color: #eaebed;
+    --text-color: #600808;
+    --main-color: #0F1A20;    
 }
+
+/* html settings */
 html{
     font-size: 62.5%;
     overflow-x: hidden
@@ -25,10 +29,14 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
+
+/* making each section of 100VH to display over whole screen to make it section wise site */
 section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+
+/* header setting to move the icon on side and nave bar or right */
 .header{
     position: fixed;
     top: 0;
@@ -42,9 +50,13 @@ section{
     z-index: 100;
 }
 
+/* makiung the header stick on top of all pages using javascript */
+
 .header.sticky{
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
+
+
 .logo{
     font-size: 2.5rem;
     color: var(--text-color);
@@ -52,6 +64,8 @@ section{
     cursor: default;
     position: relative;
 }
+
+/* logo animation using showRight property to animate the text  */
 .logo::before{
     content: '';
     position: absolute;
@@ -62,7 +76,6 @@ section{
     height: 100%;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
-
 }
 .navbar a{
     font-size: 1.7rem;
@@ -70,6 +83,10 @@ section{
     margin-left: 4rem;
     transition: .3s;
 }
+
+
+/* keeping the active session highlighted */
+
 .navbar a:hover,
 .navbar a.active
 {
@@ -86,13 +103,16 @@ section{
     justify-content: center;
     align-items: center;
 }
+
+
+/* using animation to keep the image floating */
 .home-img img{
     position: relative;
     border-radius: 50%;
     margin: 50px;
     animation: floatImage 4s ease-in-out infinite;
 }
-
+/* using befor pseudo class to hide the image load after the page loads up or refreshes */
 .home-img::before{
     content: '';
     position: absolute;
@@ -110,6 +130,7 @@ section{
     font-weight: 700;
 }
 
+/* usign the nth chile pseudo class setting the the third h3 in same div without using a different class name or id setting the bottom marging */
 .home-content h3:nth-child(2){
     margin-bottom: 2rem;
 
@@ -127,6 +148,8 @@ span{
     font-size: 1.6rem;
 
 }
+
+/* Contact button styling */
 .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -139,7 +162,11 @@ span{
     font-size: 2rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
+    transition: .5s;
+
 }
+
+
 
 .social-media a:hover{
     background: var(--main-color);
@@ -159,7 +186,8 @@ span{
     font-weight: 600;
 }
 .btn:hover{
-    box-shadow: none;
+    color: var(--main-color);
+    background: var(--bg-color);
 }
 
 .about{
