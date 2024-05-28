@@ -14,7 +14,9 @@
 
 /* making universal declarations to use through out CSS */
 :root{
-    --bg-color: #dddbf1;
+    --bg-color: #d5d6d8;
+
+    /* dddbf1 grey color bg color */
     --secon-bg-color: #eaebed;
     --text-color: #600808;
     --main-color: #0F1A20;    
@@ -26,7 +28,7 @@ html{
     overflow-x: hidden
 }
 body{
-    background: var(--bg-color);
+    background: var(--secon-bg-color);
     color: var(--text-color);
 }
 
@@ -43,7 +45,7 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: var(--secon-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -298,6 +300,9 @@ span{
     color: var(--secon-bg-color);
 }
 
+.contact{
+    background: var(--bg-color);
+}
 .contact h2{
     margin-bottom: 3rem;
 }
