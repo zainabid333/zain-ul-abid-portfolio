@@ -4,9 +4,9 @@ A site to display portfolio of Zain Ul Abid, displaying his acheivements and bre
 Not Needed
 
 # Usage
-For details, please visit, 
-<em><a href="https://zainabid333.github.io/zain-ul-abid-portfolio/"><strong>Zain Ul Abid Portfolio</strong></a></em> to see the progress of Zain Ul Abid
 
+## Deployed Link
+<em><a href="https://zainabid333.github.io/zain-ul-abid-portfolio/"><strong>CLick here for Zain Ul Abid Portfolio</strong></a></em>
 # Projects
 ## Web Design
 Numerous sites build by him are live in market and making there name known to the world
@@ -21,3 +21,6 @@ Shopify stores setup and running with latest security features added and setup w
 ## DISPATCHER
 A truck dispathcing software for managing the truckloads and dispatching them accordingly
 
+## HRIS
+
+An HRIS software to track and manage thr HR process of recruitment.
